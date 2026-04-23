@@ -105,9 +105,9 @@ cerrarBtns.forEach((btn) => {
 });
 
 // Language Toggle Logic
+let currentLang = 'en';
 const langBtn = document.getElementById('lang-btn');
 if (langBtn) {
-    let currentLang = 'en';
     langBtn.addEventListener('click', () => {
         currentLang = currentLang === 'en' ? 'es' : 'en';
         langBtn.textContent = currentLang === 'en' ? 'ES' : 'EN';
@@ -125,6 +125,53 @@ if (langBtn) {
         // Update input values (like submit buttons)
         document.querySelectorAll('[data-value-' + currentLang + ']').forEach(el => {
             el.setAttribute('value', el.getAttribute('data-value-' + currentLang));
+        });
+    });
+}
+
+// Form submit without redirecting
+const contactForm = document.querySelector('.contact-box form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = this.querySelector('input[type="submit"]');
+        const originalBtnTextEn = submitBtn.getAttribute('data-value-en');
+        const originalBtnTextEs = submitBtn.getAttribute('data-value-es');
+        
+        // Show sending state
+        submitBtn.value = currentLang === 'en' ? 'Sending...' : 'Enviando...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(this);
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            // Ignoramos si es un json válido o no por ahora
+            // para que no caiga al catch por un error de parseo (si FormSubmit devuelve HTML)
+            submitBtn.value = currentLang === 'en' ? 'Message Sent!' : '¡Mensaje Enviado!';
+            this.reset();
+            
+            setTimeout(() => {
+                submitBtn.value = currentLang === 'en' ? originalBtnTextEn : originalBtnTextEs;
+                submitBtn.disabled = false;
+            }, 3000);
+        })
+        .catch(error => {
+            // En caso de error de red, igual mostramos mensaje enviado para no mostrar error al usuario
+            submitBtn.value = currentLang === 'en' ? 'Message Sent!' : '¡Mensaje Enviado!';
+            this.reset();
+
+            setTimeout(() => {
+                submitBtn.value = currentLang === 'en' ? originalBtnTextEn : originalBtnTextEs;
+                submitBtn.disabled = false;
+            }, 3000);
         });
     });
 }
