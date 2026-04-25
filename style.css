@@ -308,8 +308,8 @@ body{
 .skills-box{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1rem;
 
 }
 .skills-box .skills-content{
@@ -330,10 +330,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 6rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 4.5rem;
     border: var(--border);
     border-radius: .3rem;
+    font-size: 0.9rem;
     font-weight: 600;
     transition: .3 ease;
 }
@@ -342,7 +343,7 @@ body{
 }
 .skills-content .content span i{
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 /* portfolio */
