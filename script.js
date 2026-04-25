@@ -105,7 +105,7 @@ cerrarBtns.forEach((btn) => {
 });
 
 // Language Toggle Logic
-let currentLang = 'en';
+let currentLang = 'es';
 const langBtn = document.getElementById('lang-btn');
 if (langBtn) {
     langBtn.addEventListener('click', () => {
