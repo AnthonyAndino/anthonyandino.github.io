@@ -1,5 +1,8 @@
 
 
+const pages = document.querySelectorAll('.book-page.page-right');
+let totalPages = pages.length;
+
 const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
 
 pageTurnBtn.forEach((el, index) => {
@@ -7,19 +10,21 @@ pageTurnBtn.forEach((el, index) => {
 
         const pageTurnId = el.getAttribute('data-page');
         const pageTurn = document.getElementById(pageTurnId);
+        
+        const pageIndex = Array.from(pages).indexOf(pageTurn);
 
         if (pageTurn.classList.contains('turn')) {
             pageTurn.classList.remove('turn');
 
             setTimeout(() => {
-                pageTurn.style.zIndex = 2 - index;
+                pageTurn.style.zIndex = 10 + totalPages - 1 - pageIndex;
             }, 500);
 
         } else {
             pageTurn.classList.add('turn');
 
             setTimeout(() => {
-                pageTurn.style.zIndex = 2 + index;
+                pageTurn.style.zIndex = 20 + pageIndex;
             }, 500);
         }
     }
@@ -27,8 +32,6 @@ pageTurnBtn.forEach((el, index) => {
 
 
 // contact me button when click
-const pages = document.querySelectorAll('.book-page.page-right');
-let totalPages = pages.length;
 const contactMeBtn = document.querySelector('.btn.contact-me');
 
 contactMeBtn.onclick = () => {
