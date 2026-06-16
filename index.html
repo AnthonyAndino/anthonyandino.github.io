@@ -208,7 +208,7 @@
           </span>
 
         </div>
-        <!-- page 4 (my skills) -->
+        <!-- page 4 (my skills - Part 1) -->
         <div class="page-back">
           <h1 class="title" data-en="My Skills" data-es="Mis Habilidades">Mis Habilidades</h1>
 
@@ -222,6 +222,9 @@
                 <span><i class="bx bxl-bootstrap"></i>BootStrap</span>
                 <span><i class="bx bxl-jquery"></i>Jquery</span>
                 <span><i class="bx bxl-typescript"></i>TypeScript</span>
+                <span><i class="bx bxl-react"></i>React</span>
+                <span><i class="bx bxl-tailwind-css"></i>Tailwind</span>
+                <span><i class="bx bx-code-alt"></i>Next.js</span>
               </div>
             </div>
 
@@ -238,18 +241,11 @@
                 <span><i class="bx bx-data"></i>MySQL</span>
               </div>
             </div>
-
-            <div class="skills-content">
-              <h3>UI/UX Design</h3>
-              <div class="content">
-                <span><i class="bx bxl-figma"></i>Figma</span>
-              </div>
-            </div>
           </div>
 
           <span class="number-page">4</span>
 
-          <!-- next button -->
+          <!-- prev button -->
           <span class="nextprev-btn back" data-page="turn-2">
             <i class="bx bx-chevron-left"></i>
           </span>
@@ -258,31 +254,38 @@
 
       <!-- page 5 & 6 -->
       <div class="book-page page-right turn" id="turn-3">
-        <!-- page 5 (latest project or many portfolio) -->
+        <!-- page 5 (my skills - Part 2) -->
         <div class="page-front">
-          <h1 class="title" data-en="Latest Project" data-es="Último Proyecto">Últimos Proyectos</h1>
+          <h1 class="title" data-en="My Skills" data-es="Mis Habilidades">Mis Habilidades</h1>
 
-          <div class="portfolio-box">
-            <div class="img-box">
-              <img src="IMG_Projects/proyect snake.png" alt="">
-            </div>
-
-            <div class="info-box">
-              <div class="info-title">
-                <h3>Snake Game - Terminal Edition</h3>
+          <div class="skills-box">
+            <div class="skills-content">
+              <h3 data-en="Back-End & Databases" data-es="Back-End y Bases de Datos">Back-End y Bases de Datos</h3>
+              <div class="content">
+                <span><i class="bx bx-code"></i>C#</span>
+                <span><i class="bx bx-server"></i>Laravel</span>
+                <span><i class="bx bx-server"></i>Django</span>
+                <span><i class="bx bx-window-alt"></i>Qt</span>
+                <span><i class="bx bx-data"></i>Postgres</span>
+                <span><i class="bx bx-data"></i>Prisma</span>
+                <span><i class="bx bx-data"></i>SQL Server</span>
               </div>
-              <p><span data-en="Tech Used:" data-es="Tecnologías:">Tecnologías:</span> <i class="bx bx-code-alt"></i> C
-                Language, <i class="bx bx-terminal"></i> Terminal API
-              </p>
-              <p data-en="A classic arcade experience built from scratch. This project demonstrates core programming concepts: real-time game loops, dynamic tail growth logic, and file-based highscore persistence using C file handling."
-                data-es="Experiencia arcade clásica construida desde cero. Este proyecto demuestra conceptos centrales de programación en C: bucle en tiempo real de juego, lógica para extender el cuerpo, y persistencia de récords basada en archivos locales.">
-                Experiencia arcade clásica construida desde cero. Este proyecto demuestra conceptos centrales de
-                programación en C: bucle en tiempo real de juego, lógica para extender el cuerpo, y persistencia de
-                récords basada en archivos locales.</p>
             </div>
-            <div class="btn-box">
-              <a href="https://github.com/AnthonyAndino/snake-game-c-terminal" class="btn" target="_blank"
-                rel="noopener noreferrer" data-en="Source Code" data-es="Código Fuente">Código Fuente</a>
+
+            <div class="skills-content">
+              <h3 data-en="Tools & IDEs" data-es="Herramientas e IDEs">Herramientas e IDEs</h3>
+              <div class="content">
+                <span><i class="bx bxl-figma"></i>Figma</span>
+                <span><i class="bx bxl-visual-studio"></i>VS Code</span>
+                <span><i class="bx bxl-visual-studio"></i>VS Studio</span>
+                <span><i class="bx bx-code-block"></i>PyCharm</span>
+                <span><i class="bx bx-code-block"></i>WebStorm</span>
+                <span><i class="bx bx-code-block"></i>Rider</span>
+                <span><i class="bx bxl-git"></i>Git</span>
+                <span><i class="bx bxl-github"></i>GitHub</span>
+                <span><i class="bx bx-paper-plane"></i>Postman</span>
+                <span><i class="bx bx-terminal"></i>Bash</span>
+              </div>
             </div>
           </div>
 
@@ -294,10 +297,78 @@
           </span>
         </div>
 
-
-        <!-- page 6 (Project 2) -->
+        <!-- page 6 (Project 1: DayMark) -->
         <div class="page-back">
-          <h1 class="title">Creative Landing UI</h1>
+          <h1 class="title" data-en="Habit Tracker & Journal" data-es="Rastreador de Hábitos">Rastreador de Hábitos</h1>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="IMG_Projects/daymark.png" alt="DayMark Habit Tracker">
+            </div>
+
+            <div class="info-box">
+              <div class="info-title">
+                <h3>DayMark</h3>
+              </div>
+              <p><span data-en="Tech Used:" data-es="Tecnologías:">Tecnologías:</span> <i class="bx bxl-react"></i> React, Next.js, Tailwind v4, Prisma, PostgreSQL</p>
+              <p data-en="A full-stack habit tracker and journal app. Features interactive timelines, auto-streak calculation, multi-language support (ES/EN), and Dracula & custom themes."
+                 data-es="Rastreador de hábitos y diario full-stack. Cuenta con líneas de tiempo interactivas, cálculo de rachas automáticas, soporte multilenguaje (ES/EN) y temas Dracula y personalizados.">
+                 Rastreador de hábitos y diario full-stack. Cuenta con líneas de tiempo interactivas, cálculo de rachas automáticas, soporte multilenguaje (ES/EN) y temas Dracula y personalizados.</p>
+            </div>
+            <div class="btn-box">
+              <a href="https://github.com/AnthonyAndino/DayMark" class="btn" target="_blank"
+                rel="noopener noreferrer" data-en="Source Code" data-es="Código Fuente">Código Fuente</a>
+              <a href="https://daymark-ochre.vercel.app/login" class="btn" target="_blank"
+                rel="noopener noreferrer" data-en="Live Preview" data-es="Vista Previa">Vista Previa</a>
+            </div>
+          </div>
+
+          <span class="number-page">6</span>
+
+          <!-- prev button -->
+          <span class="nextprev-btn back" data-page="turn-3">
+            <i class="bx bx-chevron-left"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- page 7 & 8 -->
+      <div class="book-page page-right turn" id="turn-4">
+        <!-- page 7 (Project 2: RH Manager) -->
+        <div class="page-front">
+          <h1 class="title" data-en="HR Management System" data-es="Gestión de Recursos Humanos">Gestión de Recursos Humanos</h1>
+
+          <div class="portfolio-box">
+            <div class="img-box">
+              <img src="IMG_Projects/rh_manager.png" alt="RH Manager Dashboard">
+            </div>
+
+            <div class="info-box">
+              <div class="info-title">
+                <h3>RH Manager</h3>
+              </div>
+              <p><span data-en="Tech Used:" data-es="Tecnologías:">Tecnologías:</span> <i class="bx bxl-react"></i> React, Django REST, MySQL, Bootstrap</p>
+              <p data-en="Comprehensive HR dashboard with role-based auth. Features attendance tracking with delay detection, automated payroll calculations, and interactive charts."
+                 data-es="Panel de gestión de RRHH con autenticación por roles. Control de asistencias con detección de retrasos, nóminas automáticas y gráficos interactivos.">
+                 Panel de gestión de RRHH con autenticación por roles. Control de asistencias con detección de retrasos, nóminas automáticas y gráficos interactivos.</p>
+            </div>
+            <div class="btn-box">
+              <a href="https://github.com/AnthonyAndino/rh-manager" class="btn" target="_blank"
+                rel="noopener noreferrer" data-en="Source Code" data-es="Código Fuente">Código Fuente</a>
+            </div>
+          </div>
+
+          <span class="number-page">7</span>
+
+          <!-- next button -->
+          <span class="nextprev-btn" data-page="turn-4">
+            <i class="bx bx-chevron-right"></i>
+          </span>
+        </div>
+
+        <!-- page 8 (Project 3: DSGN Creative Studio) -->
+        <div class="page-back">
+          <h1 class="title" data-en="Creative Landing UI" data-es="UI Página de Aterrizaje">Página de Aterrizaje Creativa</h1>
 
           <div class="portfolio-box">
             <div class="img-box">
@@ -323,19 +394,18 @@
             </div>
           </div>
 
-          <span class="number-page">6</span>
+          <span class="number-page">8</span>
 
           <!-- prev button -->
-          <span class="nextprev-btn back" data-page="turn-3">
+          <span class="nextprev-btn back" data-page="turn-4">
             <i class="bx bx-chevron-left"></i>
           </span>
         </div>
-
       </div>
 
-      <!-- page 7 & 8 -->
-      <div class="book-page page-right turn" id="turn-4">
-        <!-- page 7 (Project 3) -->
+      <!-- page 9 & 10 -->
+      <div class="book-page page-right turn" id="turn-5">
+        <!-- page 9 (Project 4: Sistema de Gestión C++) -->
         <div class="page-front">
           <h1 class="title" data-en="Desktop Software" data-es="Software de Escritorio">Software de Escritorio</h1>
 
@@ -362,16 +432,15 @@
             </div>
           </div>
 
-          <span class="number-page">7</span>
+          <span class="number-page">9</span>
 
           <!-- next button -->
-          <span class="nextprev-btn" data-page="turn-4">
+          <span class="nextprev-btn" data-page="turn-5">
             <i class="bx bx-chevron-right"></i>
           </span>
         </div>
 
-
-        <!-- page 8 (Project 4) -->
+        <!-- page 10 (Project 5: AuraDesk Tickets) -->
         <div class="page-back">
           <h1 class="title" data-en="Web App" data-es="Aplicación Web">Aplicación Web</h1>
 
@@ -396,19 +465,18 @@
             </div>
           </div>
 
-          <span class="number-page">8</span>
+          <span class="number-page">10</span>
 
           <!-- prev button -->
-          <span class="nextprev-btn back" data-page="turn-4">
+          <span class="nextprev-btn back" data-page="turn-5">
             <i class="bx bx-chevron-left"></i>
           </span>
         </div>
-
       </div>
 
-      <!-- page 9 & 10 -->
-      <div class="book-page page-right turn" id="turn-5">
-        <!-- page 9 (Project 5) -->
+      <!-- page 11 & 12 -->
+      <div class="book-page page-right turn" id="turn-6">
+        <!-- page 11 (Project 6: Smart Theme Switcher) -->
         <div class="page-front">
           <h1 class="title" data-en="VS Code Extension" data-es="Extensión VS Code">Extensión VS Code</h1>
 
@@ -430,21 +498,18 @@
             <div class="btn-box">
               <a href="https://github.com/AnthonyAndino/Smart-Theme-Switcher-VS-Code-Extension-" class="btn" target="_blank"
                 rel="noopener noreferrer" data-en="Source Code" data-es="Código Fuente">Código Fuente</a>
-              <a href="https://github.com/AnthonyAndino" class="btn" target="_blank" data-en="More Projects"
-                data-es="Más Proyectos">Más Proyectos</a>
             </div>
           </div>
 
-          <span class="number-page">9</span>
+          <span class="number-page">11</span>
 
           <!-- next button -->
-          <span class="nextprev-btn" data-page="turn-5">
+          <span class="nextprev-btn" data-page="turn-6">
             <i class="bx bx-chevron-right"></i>
           </span>
         </div>
 
-
-        <!-- page 10 (contact me!) -->
+        <!-- page 12 (contact me!) -->
         <div class="page-back">
           <h1 class="title" data-en="Contact Me!" data-es="¡Contáctame!">¡Contáctame!</h1>
 
@@ -465,10 +530,10 @@
             </form>
           </div>
 
-          <span class="number-page">10</span>
+          <span class="number-page">12</span>
 
           <!-- prev button -->
-          <span class="nextprev-btn back" data-page="turn-5">
+          <span class="nextprev-btn back" data-page="turn-6">
             <i class="bx bx-chevron-left"></i>
           </span>
 
@@ -477,7 +542,6 @@
             <i class="bx bxs-user"></i>
           </a>
         </div>
-
       </div>
 
 

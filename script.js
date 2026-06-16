@@ -18,14 +18,14 @@ pageTurnBtn.forEach((el, index) => {
 
             setTimeout(() => {
                 pageTurn.style.zIndex = 10 + totalPages - 1 - pageIndex;
-            }, 500);
+            }, 600);
 
         } else {
             pageTurn.classList.add('turn');
 
             setTimeout(() => {
                 pageTurn.style.zIndex = 20 + pageIndex;
-            }, 500);
+            }, 600);
         }
     }
 });
@@ -37,12 +37,11 @@ const contactMeBtn = document.querySelector('.btn.contact-me');
 contactMeBtn.onclick = () => {
     pages.forEach((page, index) => {
         setTimeout(() => {
-
             page.classList.add('turn');
             setTimeout(() => {
                 page.style.zIndex = 20 + index;
-            }, 500);
-        }, (index + 1) * 200 + 100)
+            }, 600);
+        }, (index + 1) * 250 + 100)
     });
 }
 
@@ -58,8 +57,8 @@ backProfileBtn.onclick = () => {
 
             setTimeout(() => {
                 pages[pageTurnIndex].style.zIndex = 10 + index;
-            }, 500)
-        }, (index + 1) * 200 + 100)
+            }, 600)
+        }, (index + 1) * 250 + 100)
     })
 }
 
@@ -86,8 +85,8 @@ pages.forEach((_, index) => {
 
         setTimeout(() => {
             pages[pageTurnIndex].style.zIndex = 10 + index;
-        }, 500)
-    }, (index + 1) * 200 + 2100)
+        }, 600)
+    }, (index + 1) * 250 + 2400)
 })
 
 const botones = document.querySelectorAll(".services-content .btn");
